@@ -1,0 +1,38 @@
+{
+  "name": "video-downloader",
+  "description": "Detect the video playing in your browser and download it in any available quality.",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "wxt build && node tests/e2e.mjs",
+    "postinstall": "wxt prepare",
+    "helper:install": "./helper/install.sh",
+    "icons": "node scripts/make-icons.mjs",
+    "keygen": "node scripts/keygen.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.55.0",
+    "mux.js": "^6.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@wxt-dev/module-react": "^1.2.2",
+    "puppeteer-core": "^25.13.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3",
+    "wxt": "^0.21.4"
+  }
+}
